@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESSA Safety Culture Wall of Recognition</title>
+    <title>ESSA Safety Culture Excellence Wall of Recognition</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="ESSA Safety Culture Wall of Recognition - Celebrating safety excellence and contributions">
@@ -11,29 +11,31 @@
 <body>
     <div class="container">
         <header class="hero">
-            <h1>Safety Culture Wall of Recognition</h1>
+            <h1>Safety Culture Excellence Wall of Recognition</h1>
             <p class="subtitle">Celebrating excellence in safety leadership and contributions across our organization</p>
             
-            <!-- Year Selection -->
-            <div class="year-selector">
-                <button class="year-btn active" data-year="2024" aria-label="View 2024 recognitions">2024</button>
-                <button class="year-btn" data-year="2025" aria-label="View 2025 recognitions">2025</button>
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="recognition" aria-label="View recognition page">Recognition Page</button>
+                <button class="tab-btn" data-tab="champions" aria-label="View safety champions">Safety Champions</button>
+                <button class="tab-btn" data-tab="grassroots" aria-label="View grassroots team">Grassroots Team</button>
             </div>
             
-            <!-- View Options -->
-            <div class="view-options">
-                <button class="view-btn active" data-view="all" aria-label="View all safety recognitions">All Recognitions</button>
-                <button class="view-btn" data-view="grassroots" aria-label="View grassroots team members">Grassroots Team</button>
-            </div>
-            
-            <!-- Quarter Filter -->
-            <div class="quarter-filter">
+            <!-- Combined Filter Row -->
+            <div class="filter-row">
+                <span class="filter-label">Filter by Year:</span>
+                <div class="year-selector">
+                    <button class="year-btn active" data-year="2024" aria-label="View 2024 recognitions">2024</button>
+                    <button class="year-btn" data-year="2025" aria-label="View 2025 recognitions">2025</button>
+                </div>
+                
                 <span class="filter-label">Filter by Quarter:</span>
-                <button class="quarter-btn active" data-quarter="all" aria-label="Show all quarters">All Quarters</button>
-                <button class="quarter-btn" data-quarter="Q1" aria-label="Show Q1 recognitions">Q1</button>
-                <button class="quarter-btn" data-quarter="Q2" aria-label="Show Q2 recognitions">Q2</button>
-                <button class="quarter-btn" data-quarter="Q3" aria-label="Show Q3 recognitions">Q3</button>
-                <button class="quarter-btn" data-quarter="Q4" aria-label="Show Q4 recognitions">Q4</button>
+                <div class="quarter-filter">
+                    <button class="quarter-btn active" data-quarter="all" aria-label="Show all quarters">All Quarters</button>
+                    <button class="quarter-btn" data-quarter="Q1" aria-label="Show Q1 recognitions">Q1</button>
+                    <button class="quarter-btn" data-quarter="Q2" aria-label="Show Q2 recognitions">Q2</button>
+                    <button class="quarter-btn" data-quarter="Q3" aria-label="Show Q3 recognitions">Q3</button>
+                </div>
             </div>
         </header>
 
@@ -69,253 +71,285 @@
             </div>
         </nav>
 
-        <!-- Main Recognition Section -->
-        <main id="recognition-section" class="recognition-section">
-            <h2>Safety Excellence Awards</h2>
-            
-            <!-- A Section -->
-            <section id="A" class="letter-section">
-                <h3 class="letter-header">A</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="Q1">
-                        <div class="card-header">
-                            <h4>Antonio Buco</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional commitment to team safety through proactive hazard identification and comprehensive safety protocols implementation.</p>
-                            <div class="quarter-info">
-                                <div class="quarter">
-                                    <span class="quarter-label">Q1</span>
-                                    <span class="quarter-text">Active participation in safety culture development, consistently identifying and reporting potential hazards through INI submissions.</span>
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Recognition Page Tab -->
+            <div id="recognition-tab" class="tab-pane active">
+                <main id="recognition-section" class="recognition-section">
+                    <h2>Safety Excellence Awards</h2>
+                    
+                    <!-- A Section -->
+                    <section id="A" class="letter-section">
+                        <h3 class="letter-header">A</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="Q1">
+                                <div class="card-header">
+                                    <h4>Antonio Buco</h4>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card" data-quarters="Q2">
-                        <div class="card-header">
-                            <h4>Antonio Casimiro Andre</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Exemplifies leadership in safety through consistent emphasis on employee safety and motivational guidance for safety practices.</p>
-                            <div class="quarter-info">
-                                <div class="quarter">
-                                    <span class="quarter-label">Q2</span>
-                                    <span class="quarter-text">Facilitated in-depth safety discussions during team meetings, conducted research on safe work environments, and actively shared safety knowledge with colleagues.</span>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional commitment to team safety through proactive hazard identification and comprehensive safety protocols implementation.</p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text">Active participation in safety culture development, consistently identifying and reporting potential hazards through INI submissions.</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
+                            </article>
 
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Antonio Espirito Sungo Buco Sungo</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Maintains active engagement in safety culture through systematic hazard identification and comprehensive INI reporting processes.</p>
-                        </div>
-                    </article>
-
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Arlito De Jesus Domingos Nhiala</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Consistently demonstrates safe work practices while actively sharing safety knowledge and procedures with team members.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- D Section -->
-            <section id="D" class="letter-section">
-                <h3 class="letter-header">D</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="Q2">
-                        <div class="card-header">
-                            <h4>Derek Clark</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Serves as a primary safety reference, consistently emphasizing adherence to Solar standard work practices and safety guidelines.</p>
-                            <div class="quarter-info">
-                                <div class="quarter">
-                                    <span class="quarter-label">Q2</span>
-                                    <span class="quarter-text">Contributes valuable insights during safety meetings, providing practical guidance for field operations and safety issue resolution.</span>
+                            <article class="card" data-quarters="Q2">
+                                <div class="card-header">
+                                    <h4>Antonio Casimiro Andre</h4>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- E Section -->
-            <section id="E" class="letter-section">
-                <h3 class="letter-header">E</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Estevao Barros Beco</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Maintains continuous safety awareness and effective communication protocols during field operations.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- G Section -->
-            <section id="G" class="letter-section">
-                <h3 class="letter-header">G</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Gabriel Muanda Mabanza</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Demonstrates commitment to safety through regular submission of Incident and Near-miss Investigation (INI) reports.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- I Section -->
-            <section id="I" class="letter-section">
-                <h3 class="letter-header">I</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Imaculada Zola Zau</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Consistently demonstrates exceptional hazard identification capabilities, proactively identifying potential safety risks before they escalate.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- J Section -->
-            <section id="J" class="letter-section">
-                <h3 class="letter-header">J</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Joao Barros</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Prioritizes safety in all operations, consistently utilizing appropriate tools and procedures to maintain safe work environments.</p>
-                        </div>
-                    </article>
-
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Jose Matata</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Exemplifies proactive safety leadership through daily safety briefings and continuous monitoring of team safety practices during operations.</p>
-                        </div>
-                    </article>
-
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Jose Salomao Mavungo Matoco</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Demonstrated exceptional safety leadership during the Malongo Power Station upgrade project, managing multiple contractor teams while ensuring compliance with safety procedures across all work areas.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- L Section -->
-            <section id="L" class="letter-section">
-                <h3 class="letter-header">L</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="Q2">
-                        <div class="card-header">
-                            <h4>Lusandu Lukau</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional site safety awareness through systematic identification and reporting of unsafe conditions, including critical equipment maintenance issues.</p>
-                            <div class="quarter-info">
-                                <div class="quarter">
-                                    <span class="quarter-label">Q2</span>
-                                    <span class="quarter-text">Exhibits thorough pre-work site assessment capabilities, ensuring all safety conditions are verified before commencing operations.</span>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Exemplifies leadership in safety through consistent emphasis on employee safety and motivational guidance for safety practices.</p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text">Facilitated in-depth safety discussions during team meetings, conducted research on safe work environments, and actively shared safety knowledge with colleagues.</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                            </article>
 
-            <!-- M Section -->
-            <section id="M" class="letter-section">
-                <h3 class="letter-header">M</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="">
-                        <div class="card-header">
-                            <h4>Mark Gorman</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Consistently exercises Stop Work Authority when safety standards are compromised, demonstrating unwavering commitment to safety protocols.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- S Section -->
-            <section id="S" class="letter-section">
-                <h3 class="letter-header">S</h3>
-                <div class="cards-container">
-                    <article class="card" data-quarters="Q2">
-                        <div class="card-header">
-                            <h4>Stela Pillartes da Silva</h4>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Recognized Safety Action:</strong> Coordinates comprehensive safety meetings with relevant topics and ensures effective communication systems for security personnel.</p>
-                            <div class="quarter-info">
-                                <div class="quarter">
-                                    <span class="quarter-label">Q2</span>
-                                    <span class="quarter-text">Implemented and maintained effective communication infrastructure, including Walkie-Talkie systems, to enhance security team coordination and response capabilities.</span>
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Antonio Espirito Sungo Buco Sungo</h4>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Maintains active engagement in safety culture through systematic hazard identification and comprehensive INI reporting processes.</p>
+                                </div>
+                            </article>
 
-        <!-- Grassroots Team Section (Hidden by default) -->
-        <section id="grassroots-section" class="grassroots-section" style="display: none;">
-            <h2>Grassroots Implementation Team</h2>
-            <p class="grassroots-subtitle">Recognizing the dedicated professionals who developed and implemented this Safety Culture Recognition Program</p>
-            
-            <div class="grassroots-container">
-                <article class="grassroots-card">
-                    <h3>Ambrose Dery</h3>
-                    <p>Project Lead & Safety Culture Champion</p>
-                </article>
-                
-                <article class="grassroots-card">
-                    <h3>Stela Pilartes da Silva</h3>
-                    <p>Safety Meeting Coordinator & Communication Specialist</p>
-                </article>
-                
-                <article class="grassroots-card">
-                    <h3>Imaculada Zola Zau</h3>
-                    <p>Hazard Identification Expert & Safety Advocate</p>
-                </article>
-                
-                <article class="grassroots-card">
-                    <h3>Luzia Umba</h3>
-                    <p>Safety Culture Development & Team Engagement</p>
-                </article>
-                
-                <article class="grassroots-card">
-                    <h3>Nlola Vicente Tati Pascoal</h3>
-                    <p>Safety Program Implementation & Process Improvement</p>
-                </article>
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Arlito De Jesus Domingos Nhiala</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Consistently demonstrates safe work practices while actively sharing safety knowledge and procedures with team members.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- D Section -->
+                    <section id="D" class="letter-section">
+                        <h3 class="letter-header">D</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="Q2">
+                                <div class="card-header">
+                                    <h4>Derek Clark</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Serves as a primary safety reference, consistently emphasizing adherence to Solar standard work practices and safety guidelines.</p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text">Contributes valuable insights during safety meetings, providing practical guidance for field operations and safety issue resolution.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- E Section -->
+                    <section id="E" class="letter-section">
+                        <h3 class="letter-header">E</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Estevao Barros Beco</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Maintains continuous safety awareness and effective communication protocols during field operations.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- G Section -->
+                    <section id="G" class="letter-section">
+                        <h3 class="letter-header">G</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Gabriel Muanda Mabanza</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Demonstrates commitment to safety through regular submission of Incident and Near-miss Investigation (INI) reports.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- I Section -->
+                    <section id="I" class="letter-section">
+                        <h3 class="letter-header">I</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Imaculada Zola Zau</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Consistently demonstrates exceptional hazard identification capabilities, proactively identifying potential safety risks before they escalate.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- J Section -->
+                    <section id="J" class="letter-section">
+                        <h3 class="letter-header">J</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Joao Barros</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Prioritizes safety in all operations, consistently utilizing appropriate tools and procedures to maintain safe work environments.</p>
+                                </div>
+                            </article>
+
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Jose Matata</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Exemplifies proactive safety leadership through daily safety briefings and continuous monitoring of team safety practices during operations.</p>
+                                </div>
+                            </article>
+
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Jose Salomao Mavungo Matoco</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Demonstrated exceptional safety leadership during the Malongo Power Station upgrade project, managing multiple contractor teams while ensuring compliance with safety procedures across all work areas.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- L Section -->
+                    <section id="L" class="letter-section">
+                        <h3 class="letter-header">L</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="Q2">
+                                <div class="card-header">
+                                    <h4>Lusandu Lukau</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional site safety awareness through systematic identification and reporting of unsafe conditions, including critical equipment maintenance issues.</p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text">Exhibits thorough pre-work site assessment capabilities, ensuring all safety conditions are verified before commencing operations.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- M Section -->
+                    <section id="M" class="letter-section">
+                        <h3 class="letter-header">M</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="">
+                                <div class="card-header">
+                                    <h4>Mark Gorman</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Consistently exercises Stop Work Authority when safety standards are compromised, demonstrating unwavering commitment to safety protocols.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- S Section -->
+                    <section id="S" class="letter-section">
+                        <h3 class="letter-header">S</h3>
+                        <div class="cards-container">
+                            <article class="card" data-quarters="Q2">
+                                <div class="card-header">
+                                    <h4>Stela Pillartes da Silva</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Recognized Safety Action:</strong> Coordinates comprehensive safety meetings with relevant topics and ensures effective communication systems for security personnel.</p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text">Implemented and maintained effective communication infrastructure, including Walkie-Talkie systems, to enhance security team coordination and response capabilities.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </section>
+
+            <!-- Safety Champions Tab -->
+            <div id="champions-tab" class="tab-pane">
+                <main class="champions-section">
+                    <h2>Safety Champions</h2>
+                    <p class="champions-subtitle">All recognized safety contributors across the organization</p>
+                    
+                    <div class="champions-container">
+                        <div class="champion-name">Antonio Buco</div>
+                        <div class="champion-name">Antonio Casimiro Andre</div>
+                        <div class="champion-name">Antonio Espirito Sungo Buco Sungo</div>
+                        <div class="champion-name">Arlito De Jesus Domingos Nhiala</div>
+                        <div class="champion-name">Derek Clark</div>
+                        <div class="champion-name">Estevao Barros Beco</div>
+                        <div class="champion-name">Gabriel Muanda Mabanza</div>
+                        <div class="champion-name">Imaculada Zola Zau</div>
+                        <div class="champion-name">Joao Barros</div>
+                        <div class="champion-name">Jose Matata</div>
+                        <div class="champion-name">Jose Salomao Mavungo Matoco</div>
+                        <div class="champion-name">Lusandu Lukau</div>
+                        <div class="champion-name">Mark Gorman</div>
+                        <div class="champion-name">Stela Pillartes da Silva</div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Grassroots Team Tab -->
+            <div id="grassroots-tab" class="tab-pane">
+                <main class="grassroots-section">
+                    <h2>Grassroots Implementation Team</h2>
+                    <p class="grassroots-subtitle">Recognizing the dedicated professionals who developed and implemented this Safety Culture Recognition Program</p>
+                    
+                    <div class="grassroots-container">
+                        <article class="grassroots-card">
+                            <h3>Ambrose Dery</h3>
+                            <p>Project Lead & Safety Culture Champion</p>
+                        </article>
+                        
+                        <article class="grassroots-card">
+                            <h3>Stela Pilartes da Silva</h3>
+                            <p>Safety Meeting Coordinator & Communication Specialist</p>
+                        </article>
+                        
+                        <article class="grassroots-card">
+                            <h3>Imaculada Zola Zau</h3>
+                            <p>Hazard Identification Expert & Safety Advocate</p>
+                        </article>
+                        
+                        <article class="grassroots-card">
+                            <h3>Luzia Umba</h3>
+                            <p>Safety Culture Development & Team Engagement</p>
+                        </article>
+                        
+                        <article class="grassroots-card">
+                            <h3>Nlola Vicente Tati Pascoal</h3>
+                            <p>Safety Program Implementation & Process Improvement</p>
+                        </article>
+                    </div>
+                </main>
+            </div>
+        </div>
 
         <footer class="footer">
             <p>We extend our gratitude to all safety champions for your unwavering commitment to workplace safety excellence</p>
