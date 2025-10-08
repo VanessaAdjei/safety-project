@@ -7,31 +7,39 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="ESSA Safety Culture Wall of Recognition - Celebrating safety excellence and contributions">
+    
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch language">
+            <span class="lang-text">EN</span>
+            <span class="lang-flag">🇺🇸</span>
+        </button>
+    </div>
 </head>
 <body>
     <div class="container">
         <header class="hero">
-            <h1>Safety Culture Excellence Wall of Recognition</h1>
-            <p class="subtitle">Celebrating excellence in safety leadership and contributions across our organization</p>
+            <h1 data-translate="title">Safety Culture Excellence Wall of Recognition</h1>
+            <p class="subtitle" data-translate="subtitle">Celebrating excellence in safety leadership and contributions across our organization</p>
             
             <!-- Tab Navigation -->
             <div class="tab-navigation">
-                <button class="tab-btn active" data-tab="recognition" aria-label="View recognition page">Recognition Page</button>
-                <button class="tab-btn" data-tab="champions" aria-label="View safety champions">Safety Champions</button>
-                <button class="tab-btn" data-tab="grassroots" aria-label="View grassroots team">Grassroots Team</button>
+                <button class="tab-btn active" data-tab="recognition" data-translate="tab-recognition" aria-label="View recognition page">Recognition Page</button>
+                <button class="tab-btn" data-tab="champions" data-translate="tab-champions" aria-label="View safety champions">Safety Champions</button>
+                <button class="tab-btn" data-tab="grassroots" data-translate="tab-grassroots" aria-label="View grassroots team">Grassroots Team</button>
             </div>
             
             <!-- Combined Filter Row -->
             <div class="filter-row">
-                <span class="filter-label">Filter by Year:</span>
+                <span class="filter-label" data-translate="filter-year">Filter by Year:</span>
                 <div class="year-selector">
                     <button class="year-btn active" data-year="2024" aria-label="View 2024 recognitions">2024</button>
                     <button class="year-btn" data-year="2025" aria-label="View 2025 recognitions">2025</button>
                 </div>
                 
-                <span class="filter-label">Filter by Quarter:</span>
+                <span class="filter-label" data-translate="filter-quarter">Filter by Quarter:</span>
                 <div class="quarter-filter">
-                    <button class="quarter-btn active" data-quarter="all" aria-label="Show all quarters">All Quarters</button>
+                    <button class="quarter-btn active" data-quarter="all" data-translate="all-quarters" aria-label="Show all quarters">All Quarters</button>
                     <button class="quarter-btn" data-quarter="Q1" aria-label="Show Q1 recognitions">Q1</button>
                     <button class="quarter-btn" data-quarter="Q2" aria-label="Show Q2 recognitions">Q2</button>
                     <button class="quarter-btn" data-quarter="Q3" aria-label="Show Q3 recognitions">Q3</button>
@@ -76,7 +84,7 @@
             <!-- Recognition Page Tab -->
             <div id="recognition-tab" class="tab-pane active">
                 <main id="recognition-section" class="recognition-section">
-                    <h2>Safety Excellence Awards</h2>
+                    <h2 data-translate="safety-awards">Safety Excellence Awards</h2>
                     
                     <!-- A Section -->
                     <section id="A" class="letter-section">
@@ -87,46 +95,62 @@
                                     <h4>Antonio Buco</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional commitment to team safety through proactive hazard identification and comprehensive safety protocols implementation.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-1">Ima consistently identifies hazards that could potentially cause harm.</span></p>
                                     <div class="quarter-info">
                                         <div class="quarter">
                                             <span class="quarter-label">Q1</span>
-                                            <span class="quarter-text">Active participation in safety culture development, consistently identifying and reporting potential hazards through INI submissions.</span>
+                                            <span class="quarter-text" data-translate="q1-desc">Good reference for safety issues and regularly emphasizes the importance of following Solar standard work practices and safety guidelines.</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="card" data-quarters="Q2">
+                            <article class="card" data-quarters="Q2 Q3">
                                 <div class="card-header">
                                     <h4>Antonio Casimiro Andre</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Exemplifies leadership in safety through consistent emphasis on employee safety and motivational guidance for safety practices.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-2">This colleague has promoted more in-depth discussions about safety during meetings, does a lot of research on how to work in a safe environment and shares aspects related to security with other colleagues in the team.</span></p>
                                     <div class="quarter-info">
                                         <div class="quarter">
                                             <span class="quarter-label">Q2</span>
-                                            <span class="quarter-text">Facilitated in-depth safety discussions during team meetings, conducted research on safe work environments, and actively shared safety knowledge with colleagues.</span>
+                                            <span class="quarter-text" data-translate="q2-desc-1">Casimiro shares his safety knowledge with others</span>
+                                        </div>
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q3</span>
+                                            <span class="quarter-text" data-translate="q3-desc">Julio contributes through Incident reporting (INI). He shares information on teams regarding safety culture</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Antonio Espirito Sungo Buco Sungo</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Maintains active engagement in safety culture through systematic hazard identification and comprehensive INI reporting processes.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-3">He is an active member in safety culture by pointing out hazards and submitting INI's about them</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">Always consider safety as a priority using right tools and right procedures</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
 
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Arlito De Jesus Domingos Nhiala</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Consistently demonstrates safe work practices while actively sharing safety knowledge and procedures with team members.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-4">Uses Stop Work Authority whenever safety is violated or compromised.</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">Always works safety following all procedures, and pass on your skills and safety knowledge to others.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -141,11 +165,11 @@
                                     <h4>Derek Clark</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Serves as a primary safety reference, consistently emphasizing adherence to Solar standard work practices and safety guidelines.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-5">Derek contributes during all safety meetings making good observations about topics under discussion with guidance on how to deal with issues in the field.</span></p>
                                     <div class="quarter-info">
                                         <div class="quarter">
                                             <span class="quarter-label">Q2</span>
-                                            <span class="quarter-text">Contributes valuable insights during safety meetings, providing practical guidance for field operations and safety issue resolution.</span>
+                                            <span class="quarter-text" data-translate="q2-desc-2">He submits INI's regularly</span>
                                         </div>
                                     </div>
                                 </div>
@@ -157,12 +181,18 @@
                     <section id="E" class="letter-section">
                         <h3 class="letter-header">E</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q2">
                                 <div class="card-header">
                                     <h4>Estevao Barros Beco</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Maintains continuous safety awareness and effective communication protocols during field operations.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-6">He displays awareness and continuous communication when on the field</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text" data-translate="q2-desc">He has the ability to notice the place where he is going to work and make sure everything is in order before he goes into action.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -172,12 +202,18 @@
                     <section id="G" class="letter-section">
                         <h3 class="letter-header">G</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q2">
                                 <div class="card-header">
                                     <h4>Gabriel Muanda Mabanza</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Demonstrates commitment to safety through regular submission of Incident and Near-miss Investigation (INI) reports.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-7">He displays awareness and continuous communication when on the field</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text" data-translate="q2-desc">He submits INI's regularly</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -187,12 +223,18 @@
                     <section id="I" class="letter-section">
                         <h3 class="letter-header">I</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Imaculada Zola Zau</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Consistently demonstrates exceptional hazard identification capabilities, proactively identifying potential safety risks before they escalate.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-8">Ima consistently identifies hazards that could potentially cause harm.</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">Good reference for safety issues and regularly emphasizes the importance of following Solar standard work practices and safety guidelines.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -202,30 +244,52 @@
                     <section id="J" class="letter-section">
                         <h3 class="letter-header">J</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Joao Barros</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Prioritizes safety in all operations, consistently utilizing appropriate tools and procedures to maintain safe work environments.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-9">Always consider safety as a priority using right tools and right procedures</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">Uses Stop Work Authority whenever safety is violated or compromised.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
 
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q2 Q3">
                                 <div class="card-header">
                                     <h4>Jose Matata</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Exemplifies proactive safety leadership through daily safety briefings and continuous monitoring of team safety practices during operations.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-10">He is always warning the team members every day on site before the start of work, and he is so vigilant, watching the others attitude during the work, he is one of the best for me on promoting safety culture.</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text" data-translate="q2-desc">He displays awareness and continuous communication when on the field</span>
+                                        </div>
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q3</span>
+                                            <span class="quarter-text" data-translate="q3-desc">He puts and applies all safety rules first in all work activities. He has followed all safety procedures and has encouraged his colleagues to do so as well.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
 
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q2">
                                 <div class="card-header">
                                     <h4>Jose Salomao Mavungo Matoco</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Demonstrated exceptional safety leadership during the Malongo Power Station upgrade project, managing multiple contractor teams while ensuring compliance with safety procedures across all work areas.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-11">During the last upgrade project at the Malongo Power Station, the FIR Leader was dealing with several teams (Welders, Electricians, Mechanics, Insulators, Scaffolding, Riggers and the Maintenance Management team), in my absence from the site he was the one who carried out some interventions on the safety procedures of other teams on site and also intervened in some safety procedures for Solar coworkers. I congratulated him on this attitude.</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q2</span>
+                                            <span class="quarter-text" data-translate="q2-desc">Organizing Safety meeting with relevant topics</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -235,16 +299,16 @@
                     <section id="L" class="letter-section">
                         <h3 class="letter-header">L</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="Q2">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Lusandu Lukau</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Demonstrates exceptional site safety awareness through systematic identification and reporting of unsafe conditions, including critical equipment maintenance issues.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-12">Identifying and reporting Site Unsafe Conditions such as corroded Fire extinguishant Cylinders on a site he visited.</span></p>
                                     <div class="quarter-info">
                                         <div class="quarter">
-                                            <span class="quarter-label">Q2</span>
-                                            <span class="quarter-text">Exhibits thorough pre-work site assessment capabilities, ensuring all safety conditions are verified before commencing operations.</span>
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">He has a human sense for others to be safe and goes to great lengths to ensure his safe and others' safety.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -256,12 +320,18 @@
                     <section id="M" class="letter-section">
                         <h3 class="letter-header">M</h3>
                         <div class="cards-container">
-                            <article class="card" data-quarters="">
+                            <article class="card" data-quarters="Q1">
                                 <div class="card-header">
                                     <h4>Mark Gorman</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Consistently exercises Stop Work Authority when safety standards are compromised, demonstrating unwavering commitment to safety protocols.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-13">Always works safety following all procedures, and pass on your skills and safety knowledge to others.</span></p>
+                                    <div class="quarter-info">
+                                        <div class="quarter">
+                                            <span class="quarter-label">Q1</span>
+                                            <span class="quarter-text" data-translate="q1-desc">This motivates me and I take it as an example.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -276,25 +346,26 @@
                                     <h4>Stela Pillartes da Silva</h4>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>Recognized Safety Action:</strong> Coordinates comprehensive safety meetings with relevant topics and ensures effective communication systems for security personnel.</p>
+                                    <p><strong data-translate="recognized-action">Recognized Safety Action:</strong> <span data-translate="action-14">Organizing Safety meeting with relevant topics</span></p>
                                     <div class="quarter-info">
                                         <div class="quarter">
                                             <span class="quarter-label">Q2</span>
-                                            <span class="quarter-text">Implemented and maintained effective communication infrastructure, including Walkie-Talkie systems, to enhance security team coordination and response capabilities.</span>
+                                            <span class="quarter-text" data-translate="q2-desc-4">She has insured that the security staff have a good communication link (Walk Talkie) between themselves</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                         </div>
                     </section>
+
                 </main>
             </div>
 
             <!-- Safety Champions Tab -->
             <div id="champions-tab" class="tab-pane">
                 <main class="champions-section">
-                    <h2>Safety Champions</h2>
-                    <p class="champions-subtitle">All recognized safety contributors across the organization</p>
+                    <h2 data-translate="safety-champions">Safety Champions</h2>
+                    <p class="champions-subtitle" data-translate="champions-subtitle">All recognized safety contributors across the organization</p>
                     
                     <div class="champions-container">
                         <div class="champion-name">Antonio Buco</div>
@@ -318,42 +389,43 @@
             <!-- Grassroots Team Tab -->
             <div id="grassroots-tab" class="tab-pane">
                 <main class="grassroots-section">
-                    <h2>Grassroots Implementation Team</h2>
-                    <p class="grassroots-subtitle">Recognizing the dedicated professionals who developed and implemented this Safety Culture Recognition Program</p>
+                    <h2 data-translate="grassroots-team">Grassroots Implementation Team</h2>
+                    <p class="grassroots-subtitle" data-translate="grassroots-subtitle">Recognizing the dedicated professionals who developed and implemented this Safety Culture Recognition Program</p>
                     
                     <div class="grassroots-container">
                         <article class="grassroots-card">
                             <h3>Ambrose Dery</h3>
-                            <p>Project Lead & Safety Culture Champion</p>
+                            <p data-translate="role-lead">Project Lead & Safety Culture Champion</p>
                         </article>
                         
                         <article class="grassroots-card">
                             <h3>Stela Pilartes da Silva</h3>
-                            <p>Safety Meeting Coordinator & Communication Specialist</p>
+                            <p data-translate="role-coordinator">Safety Meeting Coordinator & Communication Specialist</p>
                         </article>
                         
                         <article class="grassroots-card">
                             <h3>Imaculada Zola Zau</h3>
-                            <p>Hazard Identification Expert & Safety Advocate</p>
+                            <p data-translate="role-expert">Hazard Identification Expert & Safety Advocate</p>
                         </article>
                         
                         <article class="grassroots-card">
                             <h3>Luzia Umba</h3>
-                            <p>Safety Culture Development & Team Engagement</p>
+                            <p data-translate="role-development">Safety Culture Development & Team Engagement</p>
                         </article>
                         
                         <article class="grassroots-card">
                             <h3>Nlola Vicente Tati Pascoal</h3>
-                            <p>Safety Program Implementation & Process Improvement</p>
+                            <p data-translate="role-implementation">Safety Program Implementation & Process Improvement</p>
                         </article>
                     </div>
                 </main>
             </div>
+
         </div>
 
         <footer class="footer">
-            <p>We extend our gratitude to all safety champions for your unwavering commitment to workplace safety excellence</p>
-            <p class="small">ESSA Safety Culture Recognition Program</p>
+            <p data-translate="footer-gratitude">We extend our gratitude to all safety champions for your unwavering commitment to workplace safety excellence</p>
+            <p class="small" data-translate="footer-program">ESSA Safety Culture Recognition Program</p>
         </footer>
     </div>
 
