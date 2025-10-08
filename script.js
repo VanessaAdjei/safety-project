@@ -630,11 +630,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const langFlag = langToggle.querySelector(".lang-flag");
 
       if (currentLanguage === "en") {
-        langText.textContent = "English";
-        langFlag.textContent = "🇺🇸";
-      } else {
-        langText.textContent = "Português";
+        langText.textContent = "Toggle to Portuguese";
         langFlag.textContent = "🇵🇹";
+      } else {
+        langText.textContent = "Toggle to English";
+        langFlag.textContent = "🇺🇸";
       }
     }
   }
